@@ -1,0 +1,8 @@
+extends index
+
+block content
+    section.todo-box
+        form.todo-form(action="/", method="POST")
+            input.todo-input(type="text" name="task" placeholder="New one.." maxlength=50 autofocus)
+            input.submit-btn(type="submit" value="Add" disabled)
+        div.todos

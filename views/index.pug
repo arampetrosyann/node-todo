@@ -1,0 +1,9 @@
+extends layout
+
+block index
+    div.wrapper
+        main.page-content
+            block content
+        footer.page-foot
+            small &copy; Copyright #{new Date().getFullYear()} Aram Petrosyan. All Rights Reserved
+    script(src="/javascripts/index.js")
