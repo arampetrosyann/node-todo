@@ -1,0 +1,32 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "a simple todo app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arampetrosyann/node-todo.git"
+  },
+  "author": "Aram Petrosyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arampetrosyann/node-todo/issues"
+  },
+  "homepage": "https://github.com/arampetrosyann/node-todo#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "lodash": "^4.17.20",
+    "pug": "^3.0.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
