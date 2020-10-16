@@ -1,0 +1,123 @@
+.todo-box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 50%;
+  min-height: 324px;
+  margin: auto 0;
+  padding: 17px 7px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 22px;
+  background-color: rgb(255, 255, 255, 0.6);
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.todo-form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.todo-input {
+  flex-grow: 1;
+  height: 50px;
+  margin: 0 5px;
+  padding: 5px;
+  border: 2px solid rgb(205, 205, 205);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: var(--home-itembox-shadow);
+  font-size: 17px;
+  outline: none;
+}
+
+.todo-input:focus {
+  border: 2px solid var(--main-text-color);
+}
+
+.submit-btn {
+  flex-grow: 0;
+  width: 60px;
+  height: 50px;
+  padding: 0 10px;
+  border: 2px solid rgb(8, 60, 75);
+  border-radius: 8px;
+  background-color: rgba(8, 60, 75, 0.849);
+  box-shadow: var(--home-itembox-shadow);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.todos {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+}
+
+.todo-list li:nth-child(even) {
+  border: 1px solid rgb(72, 213, 253, 0.6);
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.644);
+  border-radius: 10px;
+  border: 1px solid rgb(251, 150, 72, 0.6);
+  box-shadow: var(--home-itembox-shadow);
+  color: rgb(0, 0, 0);
+  font-size: 23px;
+  word-break: break-all;
+}
+
+.empty-item {
+  padding: 14px 0;
+  border: none;
+  font-size: 28px;
+  text-align: center;
+}
+
+.item-btns {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 21.2px;
+}
+
+.btn {
+  display: flex;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: center;
+  outline: none;
+}
+
+.btn-edit {
+  margin-right: 12px;
+  padding-top: 4px;
+  font-size: 30px;
+  color: rgb(28, 92, 41);
+}
+
+.btn-delete {
+  font-size: 30px;
+  color: rgb(221, 43, 43);
+}

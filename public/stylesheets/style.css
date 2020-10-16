@@ -1,0 +1,51 @@
+@import "./normalize.css";
+@import "./root.css";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import "./home.css";
+@import "./error.css";
+@import "./edit.css";
+@import "./media.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "main"
+    "footer";
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+  background-color: var(--wr-bg-color);
+  background-image: url("/images/main-bg-img.png");
+  background-repeat: repeat;
+}
+
+.page-content {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 10px 14px 10px;
+  color: var(--main-text-color);
+}
+
+.page-foot {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: var(--foot-height);
+  padding: 10px 20px;
+  color: var(--main-text-color);
+  background-color: transparent;
+  font-family: "Work Sans", sans-serif;
+  z-index: 999;
+}

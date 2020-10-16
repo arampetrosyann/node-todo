@@ -1,0 +1,30 @@
+.edit-input {
+  width: 100%;
+  padding: 4px 7px;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 5px;
+  font-size: 23px;
+  outline: none;
+}
+
+.done-btn {
+  display: flex;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: center;
+  outline: none;
+  margin-right: 12px;
+  font-size: 30px;
+  color: rgb(3, 97, 3);
+  transition: 0.2s;
+}
+
+.done-btn:hover {
+  color: rgb(38, 124, 80);
+}
+
+.done-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
