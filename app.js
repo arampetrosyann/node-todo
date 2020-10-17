@@ -7,7 +7,10 @@ const router = require("./routes/router");
 const api = require("./routes/api.v1");
 const env = require("./config/env");
 const { sessionMiddle } = require("./middlewares/session.middleware");
-const { notFoundMiddle } = require("./middlewares/error.middleware");
+const {
+  notFoundMiddle,
+  errorHandler,
+} = require("./middlewares/error.middleware");
 
 const viewsPath = path.join(__dirname, "views");
 const staticFiles = path.join(__dirname, "public");
@@ -27,5 +30,6 @@ app.use(sessionMiddle);
 app.use(router);
 app.use(api);
 app.use(notFoundMiddle);
+app.use(errorHandler);
 
 app.listen(env.PORT);
